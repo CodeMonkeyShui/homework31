@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ajax示例</title>
+</head>
+<body>
+	<script src="https://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+	<script>
+		$.ajax({
+			url:'hello',
+			method: 'get',
+			dataType: 'json',
+			data: {
+				a: 1,
+				b: 2
+			},
+		}).done(function(ret){
+
+		}).error(function(){
+
+		})
+
+		$.get('hello', {}).done(function(ret){
+			// 
+		})
+	</script>
+</body>
+</html>
